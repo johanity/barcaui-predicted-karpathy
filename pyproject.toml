@@ -1,0 +1,14 @@
+[project]
+name = "autoresearch"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1",
+    "tiktoken>=0.5",
+    "requests>=2.28",
+    "datasets>=2.14",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

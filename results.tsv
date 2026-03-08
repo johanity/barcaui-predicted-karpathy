@@ -1,0 +1,22 @@
+commit	val_loss	predicted	status	description
+f247f96	4.232615	N/A	keep	baseline
+ecb62b4	4.126618	3.80	keep	LR 3e-4 → 1e-3
+32ba488	4.107551	3.95	keep	warmup 50 → 10
+c7e59ea	3.938537	4.00	keep	dropout 0.1 → 0.0
+d854367	3.384197	4.10	keep	4 layers 256 dim (4.2M)
+643595e	3.274700	3.50	keep	3 layers 192 dim (1.8M)
+384d563	3.363086	3.40	discard	2 layers 128 dim (too small)
+9a7770c	3.244042	3.15	keep	LR 1e-3 → 2e-3
+442f0cf	3.696173	3.20	discard	LR 2e-3 → 3e-3 (overshot)
+4368f35	3.225696	3.18	keep	warmup 10 → 5
+b7c99b5	3.755240	3.20	discard	warmup 5 → 0 (unstable)
+3ecca51	3.696193	3.30	discard	wider 256 dim (slower)
+000282e	3.478843	3.15	discard	batch_size 8 → 16 (fewer steps)
+9761579	3.198518	3.10	keep	batch_size 8 → 4 (more steps)
+24730f7	3.215992	3.15	discard	batch_size 4 → 2 (too noisy)
+c2d5e98	3.226630	3.12	discard	MLP ratio 4x → 2.67x
+a35c8f6	3.151396	3.10	keep	weight_decay 0.1 → 0.01
+1daed96	3.174168	3.10	discard	weight_decay 0.01 → 0.0
+bb1548e	3.081680	3.05	keep	betas (0.9,0.95) → (0.9,0.99)
+96f30f2	3.142180	3.00	discard	betas (0.9,0.99) → (0.9,0.999)
+9365e73	3.497675	3.00	discard	LR 2e-3 → 2.5e-3 (overshot)
