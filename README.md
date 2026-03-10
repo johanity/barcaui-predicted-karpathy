@@ -105,6 +105,18 @@ python train.py
 
 ---
 
+## What came next
+
+This study asked: does forcing predictions help? The answer was yes.
+
+The next question was: **does the learning transfer when the problem changes?**
+
+We ran 251 more experiments across three agent types with a 5x compute shift mid-run. The predicting agent adapted on the first try. The others didn't.
+
+**[epistemic-autoresearch](https://github.com/johanity/epistemic-autoresearch)** — the full transfer experiment with paper and results.
+
+**[Theorist](https://github.com/johanity/theorist)** — the prediction-error loop packaged as a zero-dependency Python SDK (`pip install theorist`).
+
 ## The Punchline
 
 Barcaui told us in 2025 that skipping the struggle makes you worse at learning.
